@@ -1,0 +1,183 @@
+/*BODY*/
+body{
+    font-family: 'Inter',sans-serif;
+}
+figcaption{
+    display: none;
+}
+img{
+    width: 222px;
+    height: 140px;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.logo img{
+    width: 69px;
+    height: 64px;
+}
+nav ul li{
+    display: none;
+}
+nav ul li:last-child{
+    display: block;
+}
+nav ul li:last-child img{
+    width: 50px;
+    height: 50px;
+}
+/*HEADER*/
+
+/*SECÃO VITRINE*/
+#vitrine{
+    display: flex;
+    flex-direction: column;
+    max-width: 296px;
+}
+.cards{
+    border: 1px solid #f5f5f5;
+    margin: 27px;
+    width: 296px;
+    height: 369px;
+}
+.img{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 148px;
+    width: 296px;
+}
+.categoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 9px 0px 6px 10px;
+    width: 72px;
+    height: 22px;
+    background: #ad75ad;
+}
+.categoria p{
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.descricao {
+    width: 296px;
+    height: 215px;
+}
+h3{
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.descricao-produto{
+    color: #363636;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.price{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #2e245e;
+}
+.adicionar-carrinho button{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+    border: none;
+    background-color: transparent;
+    text-decoration-line: underline;
+    margin: 20px 0px 13px 10px;
+}
+#barra-pesquisa{
+    max-width: 296px;
+    max-height: 50px;
+    margin-left: 27px;
+}
+#barra-pesquisa input{
+    width: 200px;
+    height: 40px;
+    background: #f5f5f5;
+    border: solid 1px #f5f5f5;
+    padding-left: 10px;
+    font-size: 14px;
+}
+#barra-pesquisa button{
+    position: absolute;
+    width: 85px;
+    height: 44px;
+    background: #ad75ad;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+#carrinho{
+    max-width: 296px;
+    margin: 10px 0 0 27px;
+}
+.car-compras{
+    width: 296px;
+    background: #ad75ad;
+    height: 44px;
+    border: 1px solid #ad75ad;
+}
+.car-compras p{
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 13px 0;
+}
+.car-produtos{
+    width: 296px;
+    height: 344px;
+    margin-bottom: 20px;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.car-Vazio{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.itens{
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+}
+
+
+/* MEDIA QUERIES */
