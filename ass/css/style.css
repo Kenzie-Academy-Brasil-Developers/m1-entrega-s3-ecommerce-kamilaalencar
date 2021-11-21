@@ -1,7 +1,6 @@
 /*BODY*/
 body{
     font-family: 'Inter',sans-serif;
-    width: 1024px;
 }
 figcaption{
     display: none;
@@ -13,24 +12,26 @@ img{
 
 /* HEADER */
 header{
+    background-color: #F3A7DC;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 50px;
     
 }
-.logo{
+.header-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
 h1{
     font-family: 'Clicker Script', cursive;
-    font-size: 36px;
+    font-size: 28px;
 }
 .logo img{
-    height: 76px;
-    object-fit: none;
-
+  display: none;
 }
 nav ul li{
     display: none;
@@ -39,8 +40,9 @@ nav ul li:last-child{
     display: block;
 }
 nav ul li:last-child img{
-    width: 50px;
-    height: 50px;
+    width: 28px;
+    height: 28px;
+    margin: 0 18px;
 }
 /*HEADER*/
 
@@ -73,7 +75,7 @@ nav ul li:last-child img{
     margin: 9px 0px 6px 10px;
     width: 72px;
     height: 22px;
-    background: #ad75ad;
+    background: #F3A7DC;
 }
 .categoria:hover{
     background-color: black;
@@ -127,7 +129,7 @@ h3{
     margin: 20px 0px 13px 10px;
 }
 .adicionar-carrinho button:hover{
-    color: #ad75ad;
+    color: #F3A7DC;
     background-color: black;
 }
 #barra-pesquisa{
@@ -147,7 +149,7 @@ h3{
     position: absolute;
     width: 85px;
     height: 44px;
-    background: #ad75ad;
+    background: #F3A7DC;
     border: none;
     font-size: 16px;
     color: #FFFFFF;
@@ -158,9 +160,9 @@ h3{
 }
 .car-compras{
     width: 296px;
-    background: #ad75ad;
+    background: #F3A7DC;
     height: 44px;
-    border: 1px solid #ad75ad;
+    border: 1px solid #F3A7DC;
 }
 .car-compras p{
     display: flex;
@@ -205,10 +207,13 @@ h3{
         max-height: 919px;
     }
     header{
-        background-color: #F3A7DC;
         display: flex;
         height: 70px;
         justify-content: space-around;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
     }
     nav ul{
         display: flex;
