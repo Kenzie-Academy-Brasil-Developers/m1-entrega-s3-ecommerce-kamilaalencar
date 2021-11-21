@@ -1,6 +1,7 @@
 /*BODY*/
 body{
     font-family: 'Inter',sans-serif;
+    width: 1024px;
 }
 figcaption{
     display: none;
@@ -18,9 +19,18 @@ header{
     justify-content: space-around;
     
 }
+.logo{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-family: 'Clicker Script', cursive;
+    font-size: 36px;
+}
 .logo img{
-    width: 69px;
-    height: 64px;
+    height: 76px;
+    object-fit: none;
+
 }
 nav ul li{
     display: none;
@@ -38,10 +48,10 @@ nav ul li:last-child img{
 #vitrine{
     display: flex;
     flex-direction: column;
-    max-width: 296px;
 }
 .cards{
     border: 1px solid #f5f5f5;
+    box-sizing: border-box;
     margin: 27px;
     width: 296px;
     height: 369px;
@@ -64,6 +74,9 @@ nav ul li:last-child img{
     width: 72px;
     height: 22px;
     background: #ad75ad;
+}
+.categoria:hover{
+    background-color: black;
 }
 .categoria p{
     color: #FFFFFF;
@@ -113,6 +126,10 @@ h3{
     text-decoration-line: underline;
     margin: 20px 0px 13px 10px;
 }
+.adicionar-carrinho button:hover{
+    color: #ad75ad;
+    background-color: black;
+}
 #barra-pesquisa{
     max-width: 296px;
     max-height: 50px;
@@ -135,9 +152,9 @@ h3{
     font-size: 16px;
     color: #FFFFFF;
 }
-#carrinho{
+.carrinho{
     max-width: 296px;
-    margin: 10px 0 0 27px;
+    margin-top: 10px
 }
 .car-compras{
     width: 296px;
@@ -181,3 +198,75 @@ h3{
 
 
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 400px){
+    body{
+        width: 100%;
+        max-height: 919px;
+    }
+    header{
+        background-color: #F3A7DC;
+        display: flex;
+        height: 70px;
+        justify-content: space-around;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+    nav ul li{
+        display: block;
+        align-items: center;
+        padding: 17px 10px 28px;
+    }
+    nav ul li:last-child img{
+        display: none;   
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:#704170;
+        font-size: 16px;
+        font-weight: 600;
+    } 
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .card_s{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 138px;
+        height: 115px;
+    }
+    .img{
+        width: 230px;
+    }
+    .cards{
+        margin: 27px;
+        width: 230px;
+        height: 350px;
+    }
+    .categoria{
+        width: 45px;
+        height: 16px;
+        margin: 6px 0px 6px 10px;
+    }
+    .categoria p{
+        font-size: 8px;
+    }
+    h3{
+        font-size: 13px;
+        line-height: 0px;   
+    }
+    .descricao-produto{
+        font-size: 10px;
+        margin: 20px 60px 10px 10px;
+    }
+    #barra-pesquisa{
+        margin: 27px;
+    }
+}
